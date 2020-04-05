@@ -1,16 +1,13 @@
 import { Given, Then, When } from 'cypress-cucumber-preprocessor/steps';
 
-Given('I open the {string} dropdown', (name) => {
-	cy.visit('http://codepen.io/_zan0/pen/mdJZjMo');
-	cy.get(`[data-cy=${name}]`).click();
+Given('I visit the sample site', (name) => {
+	cy.visit('sandbox-site/index.html');
 });
 
-When('I select {string}', (option) => {
-	cy.get(`[data-cy=${option}]`).click();
+When('I open the {string} dropdown and select {string}', (name, option) => {
+	cy.get(`[data-cy=${name}]`).select(option);
 });
 
 Then('I should see a {string} displayed', (fruit) => {
-	// Write code here that turns the phrase above into concrete actions
-	//cy.expect(url);
 	cy.contains(`[data-cy=display]`, fruit);
 });

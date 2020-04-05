@@ -4,6 +4,7 @@
 	"description": "Example of cypress with cucumber",
 	"main": "index.js",
 	"scripts": {
+		"cypress:open": "cypress open",
 		"test": "cypress run --spec \"**/*.feature\"",
 		"test:all": "cypress run --spec \"**/*.features\""
 	},
