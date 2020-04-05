@@ -1,0 +1,19 @@
+{
+	"cucumberautocomplete.steps": [
+		"cypress/integration/sandbox/is-it-friday-yet/*.js",
+		"node_modules/qa-lib/src/step_definitions/*.js"
+	],
+	"cucumberautocomplete.syncfeatures": "cypress/integration/*.feature",
+	"cucumberautocomplete.strictGherkinCompletion": true,
+	"editor.quickSuggestions": {
+		"comments": false,
+		"strings": true,
+		"other": true
+	},
+	"folders": [
+		{
+			"name": "Root App",
+			"path": "."
+		}
+	]
+}
